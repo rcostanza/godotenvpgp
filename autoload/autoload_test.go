@@ -1,8 +1,9 @@
 package autoload
 
 import (
-	"godotenvpgp/internal/tests"
 	"testing"
+
+	"github.com/rcostanza/godotenvpgp/internal/tests"
 )
 
 func init() {

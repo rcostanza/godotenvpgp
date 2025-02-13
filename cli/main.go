@@ -1,6 +1,6 @@
 package main
 
-import "godotenvpgp/internal/cli"
+import "github.com/rcostanza/godotenvpgp/internal/cli"
 
 var fnCli = cli.Cli
 

@@ -1,6 +1,6 @@
-module godotenvpgp
+module github.com/rcostanza/godotenvpgp
 
-go 1.23.5
+go 1.22.0
 
 require github.com/ProtonMail/gopenpgp/v3 v3.1.2
 

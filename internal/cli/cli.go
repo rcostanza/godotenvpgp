@@ -2,9 +2,10 @@ package cli
 
 import (
 	"fmt"
-	"godotenvpgp/internal/core"
 	"os"
 	"strings"
+
+	"github.com/rcostanza/godotenvpgp/internal/core"
 )
 
 // Make it test-mockable

@@ -1,9 +1,10 @@
 package core
 
 import (
-	"godotenvpgp/internal/tests"
 	"os"
 	"testing"
+
+	"github.com/rcostanza/godotenvpgp/internal/tests"
 )
 
 func TestLoadUnencrypted(t *testing.T) {

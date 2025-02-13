@@ -1,8 +1,9 @@
 package core
 
 import (
-	"godotenvpgp/internal/tests"
 	"testing"
+
+	"github.com/rcostanza/godotenvpgp/internal/tests"
 )
 
 func TestGetFilePassword(t *testing.T) {

@@ -1,10 +1,11 @@
 package core
 
 import (
-	"godotenvpgp/internal/tests"
 	"os"
 	"strings"
 	"testing"
+
+	"github.com/rcostanza/godotenvpgp/internal/tests"
 )
 
 func TestEncryptFile(t *testing.T) {

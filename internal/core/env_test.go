@@ -1,9 +1,10 @@
 package core
 
 import (
-	"godotenvpgp/internal/tests"
 	"os"
 	"testing"
+
+	"github.com/rcostanza/godotenvpgp/internal/tests"
 )
 
 func TestParseEnv(t *testing.T) {

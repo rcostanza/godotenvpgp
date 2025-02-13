@@ -1,9 +1,10 @@
 package cli
 
 import (
-	"godotenvpgp/internal/tests"
 	"os"
 	"testing"
+
+	"github.com/rcostanza/godotenvpgp/internal/tests"
 )
 
 func TestEncryptFile(t *testing.T) {

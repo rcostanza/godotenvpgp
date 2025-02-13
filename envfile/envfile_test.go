@@ -1,10 +1,11 @@
 package envfile
 
 import (
-	"godotenvpgp/internal/tests"
 	"os"
 	"strings"
 	"testing"
+
+	"github.com/rcostanza/godotenvpgp/internal/tests"
 )
 
 func mockLoadUnencrypted(err error) {

@@ -66,7 +66,7 @@ Finally, either manually invoke it:
 import (
     "fmt"
     "os"
-    "godotenvpgp/envfile"
+    "github.com/rcostanza/godotenvpgp/envfile"
 )
 
 func main() {
@@ -81,7 +81,7 @@ Or autoload it:
 import (
     "fmt"
     "os"
-    _ "godotenvpgp/autoload" // Autoloads both .env and .env.encrypted
+    _ "github.com/rcostanza/godotenvpgp/autoload" // Autoloads both .env and .env.encrypted
 )
 
 func main() {

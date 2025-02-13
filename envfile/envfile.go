@@ -2,8 +2,9 @@ package envfile
 
 import (
 	"fmt"
-	"godotenvpgp/internal/core"
 	"log"
+
+	"github.com/rcostanza/godotenvpgp/internal/core"
 )
 
 var (

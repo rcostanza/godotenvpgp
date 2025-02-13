@@ -1,8 +1,9 @@
 package main
 
 import (
-	"godotenvpgp/internal/tests"
 	"testing"
+
+	"github.com/rcostanza/godotenvpgp/internal/tests"
 )
 
 func TestMainfn(t *testing.T) {

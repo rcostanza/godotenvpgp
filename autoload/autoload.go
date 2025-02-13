@@ -3,7 +3,7 @@
 package autoload
 
 import (
-	"godotenvpgp/envfile"
+	"github.com/rcostanza/godotenvpgp/envfile"
 )
 
 var load = envfile.Load
