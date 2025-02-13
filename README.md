@@ -38,7 +38,7 @@ Utility package to use & load encrypted .env files.
 Install the package:
 
 ```bash
-go get github.com/rcostanza/godotenvpgp
+go install github.com/rcostanza/godotenvpgp/godotenvpgp
 ```
 
 Create an environment variable to store the file password, either using a regular `.env` file or otherwise:
