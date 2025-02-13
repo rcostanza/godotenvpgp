@@ -135,17 +135,18 @@ func TestSetEnv(t *testing.T) {
 			Name: "Set specific environment variables",
 			Expect: func(t *testing.T) {
 				t.Setenv("env", "dev")
+				expectedValue := "valueDev"
 				envVars := map[string]map[string]string{
 					DEFAULT_ENVIRONMENT: {
 						"key": "value",
 					},
 					"dev": {
-						"key": "valueDev",
+						"key": expectedValue,
 					},
 				}
 				SetEnv(envVars)
-				if os.Getenv("key") != "valueDev" {
-					t.Error("Expected value, got", os.Getenv("key"))
+				if os.Getenv("key") != expectedValue {
+					t.Errorf("Expected %s, got %s", expectedValue, os.Getenv("key"))
 				}
 			},
 		},

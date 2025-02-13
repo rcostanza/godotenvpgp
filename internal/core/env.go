@@ -2,10 +2,11 @@ package core
 
 import (
 	"os"
+	"slices"
 	"strings"
 )
 
-const DEFAULT_ENVIRONMENT = "DEFAULT"
+const DEFAULT_ENVIRONMENT = "__DEFAULT"
 
 func ParseEnv(fileContents string) map[string]map[string]string {
 	// Values are separated by specific environments. By default variables belong to "all",
@@ -48,11 +49,21 @@ func GetCurrentEnvironment() string {
 
 func SetEnv(envVars map[string]map[string]string) {
 	currentEnv := GetCurrentEnvironment()
-	for env, vars := range envVars {
-		if env == currentEnv || env == DEFAULT_ENVIRONMENT {
-			for key, value := range vars {
+
+	// Sort environments so the default one's variables are set first, so they can be overriden
+	// by environment-specific values if needed.
+	envNames := make([]string, 0, len(envVars))
+	for env := range envVars {
+		envNames = append(envNames, env)
+	}
+	slices.Sort(envNames)
+
+	for _, envName := range envNames {
+		if envName == currentEnv || envName == DEFAULT_ENVIRONMENT {
+			for key, value := range envVars[envName] {
 				os.Setenv(key, value)
 			}
 		}
 	}
+
 }
