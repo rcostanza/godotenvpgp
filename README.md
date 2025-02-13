@@ -1,6 +1,6 @@
 # godotenvpgp - PGP-encrypted .env files
 
-![test status](https://github.com/rcostanza/godotenvpgp/actions/workflows/go.yml/badge.svg)
+[![test status](https://github.com/rcostanza/godotenvpgp/actions/workflows/go.yml/badge.svg)](https://github.com/rcostanza/godotenvpgp/actions)
 
 Utility package to use & load encrypted .env files.
 
