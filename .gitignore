@@ -1,0 +1,4 @@
+cover.*
+.env*
+bin/
+.ignore/
